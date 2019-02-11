@@ -1,0 +1,148 @@
+                                                   KisanNetworkCodingChallenge-
+
+Backend-node.js
+Description-backened is use to create services and api.
+version-v10.4.1
+Framework-epressjs
+Npm -6.4.1
+Database-  db-Mongodb version- v3.6.5
+                          Object module-mongoose
+Other library- twilio for sending otp to mobiles
+
+Commands use to install-
+ sudo  npm install express-generator -g
+express --view=pug backend
+npm install
+npm install nodemon -- save
+Nodemon (use node start server)
+
+
+
+Api-
+
+(1)-http://localhost:3000/users/sendOtp
+Description-this api
+Req - {
+"FirstName":"kavi",
+"LastName":"pal",
+"UserNumber":"84481666243"
+}
+
+Res-
+{
+    "status": 200,
+    "message": "Please Verify your OTP!.",
+    "generateOTP": 974665,
+    "data": {
+        "FirstName": "kavi",
+        "_id": "5c5fefe2179de7285388fc5f",
+        "otp": "974665",
+        "mobileNumber": "84481666243",
+        "LastName": "pal",
+        "createdAt": "1549791202645",
+        "__v": 0
+    }
+}
+
+
+(2)-http://localhost:3000/users/sent
+Req- {
+
+}
+
+Res-{
+    "status": 200,
+    "data": [
+        {
+            "FirstName": "kavi",
+            "_id": "5c5fefe2179de7285388fc5f",
+            "otp": "974665",
+            "mobileNumber": "84481666243",
+            "LastName": "pal",
+            "createdAt": "1549791202645",
+            "__v": 0
+        },
+        {
+            "FirstName": "kavi",
+            "_id": "5c5fe013f343781cc44cdd05",
+            "otp": "364732",
+            "mobileNumber": "8448166243",
+            "LastName": "pal",
+            "createdAt": "1549787155278",
+            "__v": 0
+        }
+    ]
+}
+
+}
+
+
+3-http://localhost:3000/users/userProfile
+
+req-{
+"firstName":"kavi",
+"lastName":"pal"
+	
+}
+
+
+res-{
+    "status": 200,
+    "data": {
+        "FirstName": "kavi",
+        "_id": "5c5fe013f343781cc44cdd05",
+        "otp": "364732",
+        "mobileNumber": "8448166243",
+        "LastName": "pal",
+        "createdAt": "1549787155278",
+        "__v": 0
+    }
+}
+
+
+
+
+
+Frontend-angular
+Description-backened is use to create services and api.
+Angular CLI: 7.2.4
+Node: 10.4.1
+OS: linux x64
+Angular: 7.2.4
+... animations, cli, common, compiler, compiler-cli, core, forms
+... language-service, platform-browser, platform-browser-dynamic
+... router
+
+Package                           Version
+-----------------------------------------------------------
+@angular-devkit/architect         0.12.4
+@angular-devkit/build-angular     0.12.4
+@angular-devkit/build-optimizer   0.12.4
+@angular-devkit/build-webpack     0.12.4
+@angular-devkit/core              7.2.4
+@angular-devkit/schematics        7.2.4
+@ngtools/webpack                  7.2.4
+@schematics/angular               7.2.4
+@schematics/update                0.12.4
+rxjs                              6.3.3
+typescript                        3.2.4
+webpack                           4.28.4
+    
+
+
+
+Commands use to install-
+1.sudo npm install
+2.ng serve
+
+
+
+Component-
+1-contact.component
+2-history.component.ts
+
+
+
+
+
+
